@@ -8,4 +8,8 @@
     <string name="txt_view_date">Fecha</string>
     <string name="txt_view_photos">Fotos (opcional)</string>
     <string name="txt_view_time">Hora</string>
+    <string name="action_btn_pay_later">Pagar después</string>
+    <string name="action_btn_pay_now">Pagar ahora</string>
+    <string name="txt_view_barber_stylist">Barbero / Estilista</string>
+    <string name="txt_view_select_ap">Seleccionar cita</string>
 </resources>
