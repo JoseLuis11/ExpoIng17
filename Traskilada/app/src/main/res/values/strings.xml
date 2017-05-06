@@ -19,4 +19,7 @@
     <string name="txt_view_barber_stylist">Barber / Stylist</string>
     <string name="action_btn_pay_now">Pay now</string>
     <string name="action_btn_pay_later">Pay later</string>
+    <string name="edit_text_first_name">First Name</string>
+    <string name="edit_text_last_name">Last Name</string>
+    <string name="edit_text_phone_number">Phone number</string>
 </resources>
