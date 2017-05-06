@@ -13,15 +13,17 @@ public class WorkPlaceEmployee {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public WorkPlaceEmployee setUserId(int userId) {
         this.userId = userId;
+        return this;
     }
 
     public int getWorkplaceId() {
         return workplaceId;
     }
 
-    public void setWorkplaceId(int workplaceId) {
+    public WorkPlaceEmployee setWorkplaceId(int workplaceId) {
         this.workplaceId = workplaceId;
+        return this;
     }
 }

@@ -16,39 +16,44 @@ public class User extends BaseModel {
         return name;
     }
 
-    public void setName(String name) {
+    public User setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public User setLastName(String lastName) {
         this.lastName = lastName;
+        return this;
     }
 
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public User setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+        return this;
     }
 
     public int getEmployeeDetailId() {
         return employeeDetailId;
     }
 
-    public void setEmployeeDetailId(int employeeDetailId) {
+    public User setEmployeeDetailId(int employeeDetailId) {
         this.employeeDetailId = employeeDetailId;
+        return this;
     }
 
     public EmployeeDetails getEmployeeDetails() {
         return employeeDetails;
     }
 
-    public void setEmployeeDetails(EmployeeDetails employeeDetails) {
+    public User setEmployeeDetails(EmployeeDetails employeeDetails) {
         this.employeeDetails = employeeDetails;
+        return this;
     }
 }

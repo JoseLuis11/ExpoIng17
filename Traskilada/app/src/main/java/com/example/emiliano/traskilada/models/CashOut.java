@@ -16,23 +16,26 @@ public class CashOut extends BaseModel{
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public CashOut setAmount(double amount) {
         this.amount = amount;
+        return this;
     }
 
     public Date getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public CashOut setDate(Date date) {
         this.date = date;
+        return this;
     }
 
     public int getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public CashOut setUserId(int userId) {
         this.userId = userId;
+        return this;
     }
 }

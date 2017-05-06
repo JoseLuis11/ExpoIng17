@@ -13,15 +13,17 @@ public class Service extends BaseModel{
         return name;
     }
 
-    public void setName(String name) {
+    public Service setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public Service setDescription(String description) {
         this.description = description;
+        return this;
     }
 }
