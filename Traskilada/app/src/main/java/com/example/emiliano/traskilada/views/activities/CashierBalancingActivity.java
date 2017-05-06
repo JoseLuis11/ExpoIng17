@@ -2,6 +2,7 @@ package com.example.emiliano.traskilada.views.activities;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -37,6 +38,18 @@ public class CashierBalancingActivity extends AppCompatActivity {
 
         findViewsById();
         setListeners();
+        disableKeyboards();
+    }
+
+    /***
+     * This method prevents the keyboard from showing up when you focus on the edit texts.
+     * NOTE: It only works from lollipop and above.
+     */
+    private void disableKeyboards() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            dateEditText.setShowSoftInputOnFocus(false);
+            timeEditText.setShowSoftInputOnFocus(false);
+        }
     }
 
     private void findViewsById() {
