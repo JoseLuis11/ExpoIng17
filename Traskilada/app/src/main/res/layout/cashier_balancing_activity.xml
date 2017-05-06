@@ -6,109 +6,110 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_marginTop="@dimen/top_edge"
-        android:paddingStart="@dimen/left_and_right_edge"
-        android:paddingEnd="@dimen/left_and_right_edge"
-        android:paddingLeft="@dimen/left_and_right_edge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
         android:text="@string/txt_view_services"
-        android:textSize="@dimen/text_appearance_medium"/>
+        android:textSize="@dimen/text_appearance_medium" />
 
     <CheckBox
-        android:layout_marginStart="@dimen/left_and_right_edge"
-        android:layout_marginLeft="@dimen/left_and_right_edge"
-        android:padding="5dp"
         android:id="@+id/check_service_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:padding="5dp"
         android:text="@string/tmp_text_checkbox_item" />
 
     <CheckBox
-        android:layout_marginStart="@dimen/left_and_right_edge"
-        android:layout_marginLeft="@dimen/left_and_right_edge"
-        android:padding="5dp"
         android:id="@+id/check_service_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:padding="5dp"
         android:text="@string/tmp_text_checkbox_item" />
 
     <CheckBox
-        android:layout_marginStart="@dimen/left_and_right_edge"
-        android:layout_marginLeft="@dimen/left_and_right_edge"
-        android:padding="5dp"
         android:id="@+id/check_service_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:padding="5dp"
         android:text="@string/tmp_text_checkbox_item" />
 
     <TextView
-        android:layout_marginTop="@dimen/top_edge"
-        android:paddingStart="@dimen/left_and_right_edge"
-        android:paddingEnd="@dimen/left_and_right_edge"
-        android:paddingLeft="@dimen/left_and_right_edge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txt_view_payment"
-        android:textSize="@dimen/text_appearance_medium"/>
-
-    <EditText
-        android:paddingStart="@dimen/left_and_right_edge"
+        android:layout_marginTop="@dimen/top_edge"
         android:paddingEnd="@dimen/left_and_right_edge"
         android:paddingLeft="@dimen/left_and_right_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:text="@string/txt_view_payment"
+        android:textSize="@dimen/text_appearance_medium" />
+
+    <EditText
         android:id="@+id/input_payment_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:paddingStart="@dimen/left_and_right_edge" />
 
     <LinearLayout
-        android:layout_marginTop="@dimen/top_edge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_edge"
         android:orientation="horizontal"
         android:weightSum="10">
+
         <LinearLayout
-            android:paddingStart="@dimen/left_and_right_edge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
             android:paddingEnd="@dimen/left_and_right_edge"
             android:paddingLeft="@dimen/left_and_right_edge"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:orientation="vertical"
-            android:layout_weight="6">
+            android:paddingStart="@dimen/left_and_right_edge">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/txt_view_date"
-                android:textSize="@dimen/text_appearance_medium"/>
+                android:textSize="@dimen/text_appearance_medium" />
 
             <EditText
                 android:id="@+id/input_date_of_service"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tmp_text_date"
-                android:onClick="onClick"/>
+                android:focusable="true"
+                android:inputType="date" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="match_parent"
             android:layout_width="0dp"
-            android:orientation="vertical"
-            android:layout_weight="4">
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_view_time"
-                android:textSize="@dimen/text_appearance_medium"/>
+                android:textSize="@dimen/text_appearance_medium" />
 
             <EditText
                 android:id="@+id/input_time_of_service"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tmp_text_time"
+                android:focusable="true"
                 android:inputType="time" />
 
         </LinearLayout>
@@ -116,31 +117,31 @@
     </LinearLayout>
 
     <TextView
-        android:layout_marginTop="@dimen/top_edge"
-        android:paddingStart="@dimen/left_and_right_edge"
-        android:paddingEnd="@dimen/left_and_right_edge"
-        android:paddingLeft="@dimen/left_and_right_edge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txt_view_photos"
-        android:textSize="@dimen/text_appearance_medium"/>
-
-    <ImageView
-        android:paddingStart="@dimen/left_and_right_edge"
+        android:layout_marginTop="@dimen/top_edge"
         android:paddingEnd="@dimen/left_and_right_edge"
         android:paddingLeft="@dimen/left_and_right_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:text="@string/txt_view_photos"
+        android:textSize="@dimen/text_appearance_medium" />
+
+    <ImageView
         android:id="@+id/input_photos_of_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <Button
-        android:layout_marginTop="@dimen/top_edge"
         android:id="@+id/button"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/top_edge"
         android:text="@string/action_button_accept"
-        android:textSize="@dimen/text_appearance_medium"/>
+        android:textSize="@dimen/text_appearance_medium" />
 
 </LinearLayout>
