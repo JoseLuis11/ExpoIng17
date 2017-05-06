@@ -6,6 +6,7 @@ package com.example.emiliano.traskilada.views.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -30,10 +31,18 @@ public class ConsultarCita extends AppCompatActivity{
 
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         appointmentLists = new ArrayList<>();
+        adapter = new AppointmentAdapter(appointmentLists);
 
+
+        recyclerView.setAdapter(adapter);
+        prepareAppointmentData();
+
+    }
+
+    private void prepareAppointmentData(){
         appointmentLists.add(new AppointmentList("Pepe Castro","Rasuradón"));
         appointmentLists.add(new AppointmentList("Bersain Lopez","El cuadro"));
         appointmentLists.add(new AppointmentList("Benito Camelo","Transformer en la nuca"));
@@ -48,8 +57,6 @@ public class ConsultarCita extends AppCompatActivity{
         appointmentLists.add(new AppointmentList("Aquiles Bailo","Una bañada"));
         appointmentLists.add(new AppointmentList("Susana Oria","Pintada de uñas de las patas"));
 
-        adapter = new AppointmentAdapter(appointmentLists, this);
 
-        recyclerView.setAdapter(adapter);
     }
 }
