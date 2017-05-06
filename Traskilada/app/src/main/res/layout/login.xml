@@ -1,47 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/logo"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Traskilada"
-        android:textAlignment="center"
-        android:textColor="Black"
-        android:textSize="80px" />
+        android:layout_height="117dp">
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nombre" />
-
-    <EditText
-        android:id="@+id/Lastname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Apellidos " />
-
-    <EditText
-        android:id="@+id/phoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        android:text="Teléfono" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background=""
         android:text="Button" />
 
     <Button
