@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/top_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_view_services"
+        android:textSize="@dimen/text_appearance_medium"/>
+
+    <CheckBox
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:padding="5dp"
+        android:id="@+id/check_service_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tmp_text_checkbox_item" />
+
+    <CheckBox
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:padding="5dp"
+        android:id="@+id/check_service_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tmp_text_checkbox_item" />
+
+    <CheckBox
+        android:layout_marginStart="@dimen/left_and_right_edge"
+        android:layout_marginLeft="@dimen/left_and_right_edge"
+        android:padding="5dp"
+        android:id="@+id/check_service_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tmp_text_checkbox_item" />
+
+    <TextView
+        android:layout_marginTop="@dimen/top_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_view_payment"
+        android:textSize="@dimen/text_appearance_medium"/>
+
+    <EditText
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:id="@+id/input_payment_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/top_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout
+            android:paddingStart="@dimen/left_and_right_edge"
+            android:paddingEnd="@dimen/left_and_right_edge"
+            android:paddingLeft="@dimen/left_and_right_edge"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/txt_view_date"
+                android:textSize="@dimen/text_appearance_medium"/>
+
+            <EditText
+                android:id="@+id/input_date_of_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tmp_text_date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="@dimen/text_appearance_medium"/>
+
+            <EditText
+                android:id="@+id/input_time_of_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tmp_text_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/top_edge"
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_view_photos"
+        android:textSize="@dimen/text_appearance_medium"/>
+
+    <ImageView
+        android:paddingStart="@dimen/left_and_right_edge"
+        android:paddingEnd="@dimen/left_and_right_edge"
+        android:paddingLeft="@dimen/left_and_right_edge"
+        android:id="@+id/input_photos_of_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:layout_marginTop="@dimen/top_edge"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_button_accept"
+        android:textSize="@dimen/text_appearance_medium"/>
+
+</LinearLayout>

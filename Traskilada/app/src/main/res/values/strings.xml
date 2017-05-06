@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Traskilada</string>
+
+    <string name="txt_view_services">Services</string>
+    <string name="txt_view_photos">Photos (optional)</string>
+    <string name="txt_view_payment">Payment</string>
+    <string name="txt_view_date">Date</string>
+
+    <string name="symbol_money">$</string>
+    <string name="symbol_money_local" translatable="false">[$,.]</string>
+
+    <string name="action_button_accept" translatable="false">ok</string>
+
+    <string name="tmp_text_checkbox_item">Line Item Selected</string>
+    <string name="tmp_text_date" translatable="false">2017/05/06</string>
+    <string name="tmp_text_time" translatable="false">12:00 pm</string>
 </resources>
