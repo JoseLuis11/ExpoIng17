@@ -14,7 +14,7 @@ import retrofit2.Response;
  * @author J. Pichardo
  */
 
-public abstract class BaseConnector<T extends BaseModel> {
+public class BaseConnector<T extends BaseModel> {
 
     private final BaseService<T> service;
 
@@ -22,15 +22,10 @@ public abstract class BaseConnector<T extends BaseModel> {
     private Callback<Void> updateCallback;
     private Callback<Void> removeCallback;
 
+
     protected BaseConnector(BaseService<T> service) {
         this.service = service;
-        initCallbacks();
     }
-
-    //region Init Methods
-
-    protected abstract void initCallbacks();
-    //endregion
 
     //region Service Wrapper Methods
     public T getById(int id) {
@@ -50,6 +45,22 @@ public abstract class BaseConnector<T extends BaseModel> {
         executeAsync(service.delete(t.getId()), removeCallback);
     }
     //endregion
+
+
+    public BaseConnector setCreateCallback(Callback<Void> createCallback) {
+        this.createCallback = createCallback;
+        return this;
+    }
+
+    public BaseConnector setUpdateCallback(Callback<Void> updateCallback) {
+        this.updateCallback = updateCallback;
+        return this;
+    }
+
+    public BaseConnector setRemoveCallback(Callback<Void> removeCallback) {
+        this.removeCallback = removeCallback;
+        return this;
+    }
 
     protected static <R> R execute(Call<R> call) {
         try {
