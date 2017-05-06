@@ -87,7 +87,8 @@
                 android:id="@+id/input_date_of_service"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tmp_text_date" />
+                android:text="@string/tmp_text_date"
+                android:onClick="onClick"/>
 
         </LinearLayout>
 
@@ -100,14 +101,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Time"
+                android:text="@string/txt_view_time"
                 android:textSize="@dimen/text_appearance_medium"/>
 
             <EditText
                 android:id="@+id/input_time_of_service"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tmp_text_time" />
+                android:text="@string/tmp_text_time"
+                android:inputType="time" />
 
         </LinearLayout>
 

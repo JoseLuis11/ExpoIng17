@@ -5,6 +5,7 @@
     <string name="txt_view_photos">Photos (optional)</string>
     <string name="txt_view_payment">Payment</string>
     <string name="txt_view_date">Date</string>
+    <string name="txt_view_time">Time</string>
 
     <string name="symbol_money">$</string>
     <string name="symbol_money_local" translatable="false">[$,.]</string>
