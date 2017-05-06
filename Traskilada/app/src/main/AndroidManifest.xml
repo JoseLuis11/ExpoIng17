@@ -10,6 +10,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".views.activities.CashierBalancingActivity">
+
+        </activity>
+        <activity android:name=".views.activities.ConsultarCita">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
