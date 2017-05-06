@@ -5,7 +5,8 @@ package com.example.emiliano.traskilada.models;
  */
 
 public class BaseModel {
-    public int id;
+
+    private int id;
 
     public int getId() {
         return id;

@@ -16,21 +16,26 @@ import retrofit2.http.Path;
  * @author J. Pichardo
  */
 
-public interface WorkPlaceService {
+public interface WorkPlaceService extends BaseService<WorkPlace> {
     String BASE_URL = "workplace/";
 
+    @Override
     @GET(BASE_URL)
     Call<List<WorkPlace>> getAll();
 
+    @Override
     @GET(BASE_URL + "{id}")
-    Call<List<WorkPlace>> getById(@Path("id") int id);
+    Call<WorkPlace> getById(@Path("id") int id);
 
+    @Override
     @POST(BASE_URL)
     Call<Void> create(@Body WorkPlace workplace);
 
+    @Override
     @PUT(BASE_URL + "{id}")
     Call<Void> update(@Path("id") int id, @Body WorkPlace workplace);
 
+    @Override
     @DELETE(BASE_URL + "{id}")
     Call<Void> delete(@Path("id") int id);
 }

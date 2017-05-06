@@ -16,22 +16,27 @@ import retrofit2.http.Path;
  * @author J. Pichardo
  */
 
-public interface UserService {
+public interface UserService extends BaseService<User> {
 
     String BASE_URL = "user/";
 
+    @Override
     @GET(BASE_URL)
     Call<List<User>> getAll();
 
+    @Override
     @GET(BASE_URL + "{id}")
-    Call<List<User>> getById(@Path("id") int id);
+    Call<User> getById(@Path("id") int id);
 
+    @Override
     @POST(BASE_URL)
     Call<Void> create(@Body User user);
 
+    @Override
     @PUT(BASE_URL + "{id}")
     Call<Void> update(@Path("id") int id, @Body User user);
 
+    @Override
     @DELETE(BASE_URL + "{id}")
     Call<Void> delete(@Path("id") int id);
 

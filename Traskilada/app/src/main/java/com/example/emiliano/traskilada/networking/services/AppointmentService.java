@@ -16,22 +16,27 @@ import retrofit2.http.Path;
  * @author J. Pichardo
  */
 
-public interface AppointmentService {
+public interface AppointmentService extends BaseService<Appointment> {
 
     String BASE_URL = "appointment/";
 
+    @Override
     @GET(BASE_URL)
     Call<List<Appointment>> getAll();
 
+    @Override
     @GET(BASE_URL + "{id}")
-    Call<List<Appointment>> getById(@Path("id") int id);
+    Call<Appointment> getById(@Path("id") int id);
 
+    @Override
     @POST(BASE_URL)
     Call<Void> create(@Body Appointment appointment);
 
+    @Override
     @PUT(BASE_URL + "{id}")
     Call<Void> update(@Path("id") int id, @Body Appointment appointment);
 
+    @Override
     @DELETE(BASE_URL + "{id}")
     Call<Void> delete(@Path("id") int id);
 

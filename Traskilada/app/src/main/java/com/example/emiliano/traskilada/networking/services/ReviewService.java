@@ -16,22 +16,27 @@ import retrofit2.http.Path;
  * @author J. Pichardo
  */
 
-public interface ReviewService {
+public interface ReviewService extends BaseService<Review> {
 
     String BASE_URL = "review/";
 
+    @Override
     @GET(BASE_URL)
     Call<List<Review>> getAll();
 
+    @Override
     @GET(BASE_URL + "{id}")
-    Call<List<Review>> getById(@Path("id") int id);
+    Call<Review> getById(@Path("id") int id);
 
+    @Override
     @POST(BASE_URL)
     Call<Void> create(@Body Review review);
 
+    @Override
     @PUT(BASE_URL + "{id}")
     Call<Void> update(@Path("id") int id, @Body Review review);
 
+    @Override
     @DELETE(BASE_URL + "{id}")
     Call<Void> delete(@Path("id") int id);
 }
