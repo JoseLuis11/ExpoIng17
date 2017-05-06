@@ -4,7 +4,7 @@ package com.example.emiliano.traskilada.models;
  * Created by JoseLuis on 06/05/2017.
  */
 
-public class Account extends BaseModel{
+public class Account extends BaseModel {
     private String email;
     private String password;
     private User user;
