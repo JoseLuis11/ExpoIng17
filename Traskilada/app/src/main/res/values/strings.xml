@@ -23,4 +23,5 @@
     <string name="edit_text_last_name">Last name</string>
     <string name="edit_text_phone_number">Phone number</string>
     <string name="action_sign_in">Sign in</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

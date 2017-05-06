@@ -8,17 +8,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".views.activities.CashierBalancingActivity">
-
-        </activity>
+        <activity android:name=".views.activities.CashierBalancingActivity"></activity>
         <activity android:name=".views.activities.ConsultarCita">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".views.activities.CreateAppointmentActivity" />
+        <activity
+            android:name=".views.activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

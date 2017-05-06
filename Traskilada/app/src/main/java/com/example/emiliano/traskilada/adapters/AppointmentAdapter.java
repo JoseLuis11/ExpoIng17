@@ -1,4 +1,4 @@
-package com.example.emiliano.traskilada;
+package com.example.emiliano.traskilada.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.emiliano.traskilada.R;
 import com.example.emiliano.traskilada.models.AppointmentList;
 
 import java.util.List;
@@ -54,6 +55,5 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
     public int getItemCount() {
         return appointmentItems.size();
     }
-
 
 }

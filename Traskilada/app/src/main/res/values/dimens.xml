@@ -8,4 +8,5 @@
     <dimen name="grid_child_edge">24dp</dimen>
     <dimen name="left_and_right_edge">16dp</dimen>
     <dimen name="top_edge">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
