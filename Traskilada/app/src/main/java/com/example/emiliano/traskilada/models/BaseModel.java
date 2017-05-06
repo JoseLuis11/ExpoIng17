@@ -12,7 +12,8 @@ public class BaseModel {
         return id;
     }
 
-    public void setId(int id) {
+    public BaseModel setId(int id) {
         this.id = id;
+        return this;
     }
 }

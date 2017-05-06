@@ -15,31 +15,35 @@ public class Review extends BaseModel{
         return rating;
     }
 
-    public void setRating(double rating) {
+    public Review setRating(double rating) {
         this.rating = rating;
+        return this;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public Review setMessage(String message) {
         this.message = message;
+        return this;
     }
 
     public int getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public Review setUserId(int userId) {
         this.userId = userId;
+        return this;
     }
 
     public int getWorkplaceId() {
         return workplaceId;
     }
 
-    public void setWorkplaceId(int workplaceId) {
+    public Review setWorkplaceId(int workplaceId) {
         this.workplaceId = workplaceId;
+        return this;
     }
 }

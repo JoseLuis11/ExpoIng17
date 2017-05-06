@@ -19,47 +19,53 @@ public class EmployeeDetails extends BaseModel {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public EmployeeDetails setUserId(int userId) {
         this.userId = userId;
+        return this;
     }
 
     public List<WorkPlace> getWorkplaces() {
         return workplaces;
     }
 
-    public void setWorkplaces(List<WorkPlace> workplaces) {
+    public EmployeeDetails setWorkplaces(List<WorkPlace> workplaces) {
         this.workplaces = workplaces;
+        return this;
     }
 
     public List<Service> getServices() {
         return services;
     }
 
-    public void setServices(List<Service> services) {
+    public EmployeeDetails setServices(List<Service> services) {
         this.services = services;
+        return this;
     }
 
     public List<Appointment> getAppointments() {
         return appointments;
     }
 
-    public void setAppointments(List<Appointment> appointments) {
+    public EmployeeDetails setAppointments(List<Appointment> appointments) {
         this.appointments = appointments;
+        return this;
     }
 
     public int getWorkplaceId() {
         return workplaceId;
     }
 
-    public void setWorkplaceId(int workplaceId) {
+    public EmployeeDetails setWorkplaceId(int workplaceId) {
         this.workplaceId = workplaceId;
+        return this;
     }
 
     public boolean isOwner() {
         return isOwner;
     }
 
-    public void setOwner(boolean owner) {
+    public EmployeeDetails setOwner(boolean owner) {
         isOwner = owner;
+        return this;
     }
 }

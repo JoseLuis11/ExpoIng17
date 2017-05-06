@@ -35,4 +35,8 @@ public class ConnectorFactory {
     public BaseConnector<WorkPlace> getWorkPlaceConnector() {
         return new BaseConnector<>(serviceFactory.getWorkPlaceService());
     }
+
+    public AccountConnector getAccountConnector() {
+        return new AccountConnector(serviceFactory.getAccountService());
+    }
 }

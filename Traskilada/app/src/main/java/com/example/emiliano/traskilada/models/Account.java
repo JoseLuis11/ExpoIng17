@@ -14,31 +14,35 @@ public class Account extends BaseModel {
         return email;
     }
 
-    public void setEmail(String email) {
+    public Account setEmail(String email) {
         this.email = email;
+        return this;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public Account setPassword(String password) {
         this.password = password;
+        return this;
     }
 
     public User getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public Account setUser(User user) {
         this.user = user;
+        return this;
     }
 
     public LoginType getLoginType() {
         return loginType;
     }
 
-    public void setLoginType(LoginType loginType) {
+    public Account setLoginType(LoginType loginType) {
         this.loginType = loginType;
+        return this;
     }
 }

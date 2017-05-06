@@ -16,23 +16,26 @@ public class WorkPlace extends BaseModel{
         return name;
     }
 
-    public void setName(String name) {
+    public WorkPlace setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public WorkPlace setAddress(String address) {
         this.address = address;
+        return this;
     }
 
     public List<User> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(List<User> employees) {
+    public WorkPlace setEmployees(List<User> employees) {
         this.employees = employees;
+        return this;
     }
 }

@@ -18,31 +18,35 @@ public class Appointment extends BaseModel {
         return date;
     }
 
-    public void setDate(Date date) {
+    public Appointment setDate(Date date) {
         this.date = date;
+        return this;
     }
 
     public int getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(int employeeId) {
+    public Appointment setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
+        return this;
     }
 
     public int getClientId() {
         return clientId;
     }
 
-    public void setClientId(int clientId) {
+    public Appointment setClientId(int clientId) {
         this.clientId = clientId;
+        return this;
     }
 
     public List<Service> getServices() {
         return services;
     }
 
-    public void setServices(List<Service> services) {
+    public Appointment setServices(List<Service> services) {
         this.services = services;
+        return this;
     }
 }

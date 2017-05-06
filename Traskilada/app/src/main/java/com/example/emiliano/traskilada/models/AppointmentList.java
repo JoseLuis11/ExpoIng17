@@ -19,15 +19,17 @@ public class AppointmentList {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public AppointmentList setUserName(String userName) {
         this.userName = userName;
+        return this;
     }
 
     public String getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public AppointmentList setService(String service) {
         this.service = service;
+        return this;
     }
 }

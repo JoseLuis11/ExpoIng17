@@ -40,7 +40,6 @@ public class ServiceFactory {
     private Gson getGsonInstance() {
         if (gson == null) {
             final GsonBuilder builder = new GsonBuilder()
-                    .setDateFormat("yyyyMMddTHH:mmZ")
                     .setFieldNamingPolicy(FieldNamingPolicy.IDENTITY)
                     .registerTypeHierarchyAdapter(Enum.class, new EnumSerializer());
             gson = builder.create();
