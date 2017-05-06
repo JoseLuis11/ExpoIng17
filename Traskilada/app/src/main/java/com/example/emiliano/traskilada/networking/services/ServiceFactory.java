@@ -1,5 +1,6 @@
 package com.example.emiliano.traskilada.networking.services;
 
+import com.example.emiliano.traskilada.networking.serialization.EnumSerializer;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -40,7 +41,8 @@ public class ServiceFactory {
         if (gson == null) {
             final GsonBuilder builder = new GsonBuilder()
                     .setDateFormat("yyyyMMddTHH:mmZ")
-                    .setFieldNamingPolicy(FieldNamingPolicy.IDENTITY);
+                    .setFieldNamingPolicy(FieldNamingPolicy.IDENTITY)
+                    .registerTypeHierarchyAdapter(Enum.class, new EnumSerializer());
             gson = builder.create();
         }
         return gson;
